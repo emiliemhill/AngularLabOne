@@ -1,0 +1,9 @@
+<div id= "main">
+    <div id= "list">
+        <h1>TODO List</h1>
+        <p>A place to store the things you have to do!</p>
+        <task-list todo-list = "$ctrl.todoList"></task-list>
+        <input id="addToDo"type="text" placeholder="Add your to-do" ng-model="$ctrl.item">
+        <button type="button" ng-click="$ctrl.addItem($ctrl.item)">Add</button>
+    </div>
+</div>
