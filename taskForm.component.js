@@ -5,12 +5,13 @@
 
         },
         templateUrl: "partials/taskForm.template.html",
-        controller: function() {
+        controller: function(FormService) {
             var $ctrl = this;
             $ctrl.todoList = ["hi", "hello"];
-            $ctrl.addItem = function (item){
-                $ctrl.todoList.push(item)
-                $ctrl.item = ""
+            $ctrl.addItem = function (Todo){
+                FormService.getTodos(Todo)
+                // $ctrl.todoList.push(Todo)
+                
             }
         }
     }
