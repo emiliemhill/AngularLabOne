@@ -1,22 +1,20 @@
-(function() {
+(function () {
     var taskForm = {
         bindings: {
 
 
         },
         templateUrl: "partials/taskForm.template.html",
-        controller: function(FormService) {
-            var $ctrl = this;
-            $ctrl.todoList = ["hi", "hello"];
-            $ctrl.addItem = function (Todo){
+        controller: function (FormService) {
+            var vm = this;
+            vm.addItem = function (Todo) {
                 FormService.getTodos(Todo)
-                // $ctrl.todoList.push(Todo)
-                
+
             }
         }
     }
 
 
     angular.module("app")
-    .component("taskForm", taskForm);
+        .component("taskForm", taskForm);
 })();
