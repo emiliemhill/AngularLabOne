@@ -13,15 +13,18 @@
 
 <body ng-app="app">
     
-    <task-form></task-form>
+    <ng-view></ng-view>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-route.min.js"></script>
     <script src="app.js"></script>
+    <script src="config.js"></script>
     <script src="formService.js"></script>
     <script src="hoverState.directive.js"></script>
     <script src="taskForm.component.js"></script>
     <script src="taskList.component.js"></script>
+    <script src="taskStart.component.js"></script>
 </body>
 
 </html>

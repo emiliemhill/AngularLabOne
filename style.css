@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
 }
-#main {
+.main {
     background-color: white;
     color: black;
     font-family: "Open Sans";
@@ -19,6 +19,25 @@ body {
     padding-left: 10px;
 
     
+}
+main.main {
+   height: 150px;
+   width: 500px;
+}
+#startarrow {
+    float: right;
+    color: #ff69b4;
+    text-decoration: none;
+    padding-top: 20px;
+}
+#backarrow {
+    float: left;
+    color: #ff69b4;
+    text-decoration: none;
+}
+i.material-icons.arrow {
+    float: left;
+    padding-right: 5px;
 }
 h1 {
     margin: 2px;

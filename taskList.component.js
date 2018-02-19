@@ -6,6 +6,7 @@
             $ctrl.todoList = FormService.getTodos(); 
             $ctrl.removeItem = function(item) {
                 FormService.removeTodo(item);
+
             }
             
         }

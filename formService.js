@@ -8,8 +8,6 @@
         }
 
         function pushToDo(TodoText) {
-            console.log(tasks);
-            console.log(tasks);
             tasks.push(TodoText);
             console.log(tasks);
 
@@ -20,9 +18,9 @@
             return tasks;
 
         }
-        function removeTodo(Todo) {
-            var array = items;
-            var index = array.indexOf(Todo);
+        function removeTodo(item) {
+            var array = item;
+            var index = array.indexOf(item);
             array.splice(index, 1);
         }
     }
