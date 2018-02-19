@@ -1,14 +1,11 @@
 (function() {
     var taskList = {
-        bindings: {
-            todoList: "<"
-
-        },
         templateUrl: "partials/taskList.template.html",
-        controller: function() {
+        controller: function(FormService) {
             var $ctrl = this;
+            $ctrl.todoList = FormService.getTodos(); 
             $ctrl.removeItem = function(item) {
-                $ctrl.todoList.splice(item, 1);
+                FormService.removeTodo(item);
             }
             
         }

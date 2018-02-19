@@ -1,14 +1,10 @@
 (function () {
     var taskForm = {
-        bindings: {
-
-
-        },
         templateUrl: "partials/taskForm.template.html",
         controller: function (FormService) {
             var vm = this;
             vm.addItem = function (Todo) {
-                FormService.getTodos(Todo)
+                FormService.pushToDo(Todo)
 
             }
         }

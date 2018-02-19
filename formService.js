@@ -1,26 +1,28 @@
 (function () {
     function FormService() {
-        var createTodosObj = [];
+        var tasks = [];
         return {
+            pushToDo: pushToDo,
             getTodos: getTodos,
-            sendTodos: sendTodos
+            removeToDo: removeTodo
         }
 
-        function getTodos(TodosObj) {
-            createTodosObj = TodosObj;
-            createTodosObj.push(TodosObj);
-            console.log(createTodosObj);
-            
+        function pushToDo(TodoText) {
+            console.log(tasks);
+            console.log(tasks);
+            tasks.push(TodoText);
+            console.log(tasks);
+
 
         }
 
-        function sendTodos() {
-            return createTodosObj;
+        function getTodos() {
+            return tasks;
 
         }
-        function removeTodos(Todos ){
+        function removeTodo(Todo) {
             var array = items;
-            var index = array.indexOf(Todos);
+            var index = array.indexOf(Todo);
             array.splice(index, 1);
         }
     }
